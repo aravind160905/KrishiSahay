@@ -1,0 +1,422 @@
+[
+    {
+        "id": 1,
+        "question": "How to control aphids in mustard crop?",
+        "answer": "For controlling aphids in mustard, spray Imidacloprid 17.8 SL @ 0.3ml/litre or Dimethoate 30 EC @ 2ml/litre of water. Spray in the evening hours. If infestation is severe, repeat after 15 days. Yellow sticky traps can also be used for monitoring.",
+        "category": "pest_control",
+        "crop": "Mustard"
+    },
+    {
+        "id": 2,
+        "question": "What is the treatment for leaf spot disease in tomato?",
+        "answer": "For leaf spot in tomato, spray Mancozeb 75 WP @ 2.5g/litre or Copper Oxychloride @ 3g/litre of water at 10-15 day intervals. Remove and destroy infected leaves. Ensure proper spacing between plants for air circulation. Avoid overhead irrigation.",
+        "category": "disease_control",
+        "crop": "Tomato"
+    },
+    {
+        "id": 3,
+        "question": "Suggest pesticide for whitefly in cotton crop",
+        "answer": "For whitefly in cotton, spray Acetamiprid 20 SP @ 0.2g/litre or Spiromesifen 22.9 SC @ 0.5ml/litre of water. Use yellow sticky traps for monitoring. Spray during early morning or evening. Avoid repeated use of same insecticide to prevent resistance.",
+        "category": "pest_control",
+        "crop": "Cotton"
+    },
+    {
+        "id": 4,
+        "question": "How to prevent fruit borer in brinjal?",
+        "answer": "Install pheromone traps @ 5/acre for monitoring. Spray Emamectin Benzoate 5 SG @ 0.4g/litre or Spinosad 45 SC @ 0.3ml/litre. Collect and destroy fallen/damaged fruits. Neem oil 5% spray can also be used as organic alternative. Crop rotation helps prevent recurrence.",
+        "category": "pest_control",
+        "crop": "Brinjal"
+    },
+    {
+        "id": 5,
+        "question": "What fertilizer is recommended during flowering stage in maize?",
+        "answer": "During flowering in maize, apply Urea @ 65 kg/acre as top dressing. Additionally, spray DAP 2% foliar solution for better grain filling. Potassium application (MOP @ 25 kg/acre) during this stage improves grain quality. Ensure adequate irrigation during tasseling and silking stage.",
+        "category": "fertilizer",
+        "crop": "Maize"
+    },
+    {
+        "id": 6,
+        "question": "How to protect paddy from blast disease?",
+        "answer": "For blast in paddy, spray Tricyclazole 75 WP @ 0.6g/litre or Isoprothiolane 40 EC @ 1.5ml/litre of water. Use resistant varieties like Pusa Basmati 1509. Avoid excess nitrogen fertilizer. Maintain proper water management in the field. Treat seeds with Carbendazim before sowing.",
+        "category": "disease_control",
+        "crop": "Paddy"
+    },
+    {
+        "id": 7,
+        "question": "What is the solution for jassids in cotton?",
+        "answer": "For jassids in cotton, spray Imidacloprid 17.8 SL @ 0.3ml/litre or Flonicamid 50 WG @ 0.3g/litre. Maintain proper plant population. Remove weeds around the field. Use neem-based insecticides as first line of defense. Avoid spraying during peak pollination hours.",
+        "category": "pest_control",
+        "crop": "Cotton"
+    },
+    {
+        "id": 8,
+        "question": "How to apply for PM Kisan Samman Nidhi scheme?",
+        "answer": "To apply for PM Kisan, visit www.pmkisan.gov.in or your nearest Common Service Centre (CSC). Required documents: Aadhaar card, bank passbook, land records. The scheme provides Rs 6000/year in 3 installments. Self-registration is available on the portal. Contact district agriculture office for assistance.",
+        "category": "government_scheme",
+        "crop": "General"
+    },
+    {
+        "id": 9,
+        "question": "What is the dosage of neem oil for controlling aphids?",
+        "answer": "Use neem oil @ 5ml/litre of water (0.5% concentration). Add a sticker/spreader @ 0.5ml/litre. Spray in the evening to avoid phytotoxicity. Repeat every 7-10 days. Neem oil is effective against aphids, whiteflies, and mealybugs. It is safe for beneficial insects when used at recommended doses.",
+        "category": "pest_control",
+        "crop": "General"
+    },
+    {
+        "id": 10,
+        "question": "How to treat blight disease in potato crops?",
+        "answer": "For late blight in potato, spray Mancozeb 75 WP @ 2.5g/litre as preventive spray. For curative action, use Cymoxanil + Mancozeb (Curzate M8) @ 3g/litre. Start spraying when weather becomes cloudy and humid. Repeat every 7-10 days. Use certified disease-free seed tubers.",
+        "category": "disease_control",
+        "crop": "Potato"
+    },
+    {
+        "id": 11,
+        "question": "What is the recommended seed rate for wheat sowing?",
+        "answer": "For wheat, use seed rate of 100 kg/acre for irrigated conditions and 125 kg/acre for rainfed. For late sowing (after November), increase seed rate to 125-150 kg/acre. Treat seeds with Carboxin + Thiram @ 2.5g/kg before sowing to prevent seed-borne diseases.",
+        "category": "crop_management",
+        "crop": "Wheat"
+    },
+    {
+        "id": 12,
+        "question": "How to manage red rot disease in sugarcane?",
+        "answer": "For red rot in sugarcane, use resistant varieties like CoJ 64, Co 238. Treat setts with Carbendazim 50 WP @ 2g/litre for 15 minutes before planting. Remove and burn infected plants. Avoid waterlogging. Practice 3-year crop rotation with rice or wheat.",
+        "category": "disease_control",
+        "crop": "Sugarcane"
+    },
+    {
+        "id": 13,
+        "question": "What is the best time to sow rice nursery?",
+        "answer": "For kharif rice, sow nursery in June (15-30 June for most regions). Use 30-40 kg seed/acre for transplanting. Nursery area should be 1/10th of main field. Apply DAP 10kg per nursery bed. Maintain 2-3 cm water in nursery. Seedlings are ready for transplanting in 25-30 days.",
+        "category": "crop_management",
+        "crop": "Rice"
+    },
+    {
+        "id": 14,
+        "question": "How to control stem borer in rice?",
+        "answer": "For stem borer in rice, apply Cartap Hydrochloride 4G granules @ 8 kg/acre in standing water. Alternatively spray Chlorantraniliprole 18.5 SC @ 0.3ml/litre. Use light traps during moth emergence. Clip leaf tips during transplanting to remove egg masses. Harvest at ground level.",
+        "category": "pest_control",
+        "crop": "Rice"
+    },
+    {
+        "id": 15,
+        "question": "What are the benefits of Pradhan Mantri Fasal Bima Yojana?",
+        "answer": "PMFBY provides crop insurance at low premium: 2% for Kharif, 1.5% for Rabi, 5% for commercial crops. Coverage includes flood, drought, hailstorm, pest attack. Enroll at bank/CSC before cutoff date. Claim through district agriculture office. Both loanee and non-loanee farmers eligible.",
+        "category": "government_scheme",
+        "crop": "General"
+    },
+    {
+        "id": 16,
+        "question": "How to increase yield of wheat crop?",
+        "answer": "For higher wheat yield: use HD 3086, DBW 187 or PBW 723 varieties. Sow by 15th November. Apply NPK 120:60:40 kg/ha. Give 5-6 irrigations at crown root, tillering, jointing, flowering, milking, and dough stages. Spray Propiconazole for rust. Harvest at golden yellow color.",
+        "category": "crop_management",
+        "crop": "Wheat"
+    },
+    {
+        "id": 17,
+        "question": "What organic manure is best for vegetable crops?",
+        "answer": "For vegetables, use well-decomposed FYM @ 10 tonnes/acre or Vermicompost @ 2 tonnes/acre. Apply 15-20 days before sowing. Neem cake @ 100 kg/acre controls soil-borne pests. Poultry manure @ 2 tonnes/acre is also excellent. Bio-fertilizers like Azotobacter and PSB further enhance fertility.",
+        "category": "fertilizer",
+        "crop": "General"
+    },
+    {
+        "id": 18,
+        "question": "How to control pink bollworm in cotton?",
+        "answer": "For pink bollworm in cotton, install pheromone traps @ 5/acre from flower initiation. Spray Profenophos 50 EC @ 2ml/litre or Quinalphos 25 EC @ 2ml/litre at square/boll formation. Pick and destroy rosette flowers. Grow Bt cotton varieties. Destroy crop residue after harvest.",
+        "category": "pest_control",
+        "crop": "Cotton"
+    },
+    {
+        "id": 19,
+        "question": "What is the spacing for tomato transplanting?",
+        "answer": "Recommended spacing for tomato: 60cm x 45cm for determinate varieties and 90cm x 60cm for indeterminate varieties. In raised bed system, use 60cm x 30cm with drip irrigation. Plant in evening hours. Apply Trichoderma @ 2.5 kg/acre at transplanting for root disease protection.",
+        "category": "crop_management",
+        "crop": "Tomato"
+    },
+    {
+        "id": 20,
+        "question": "How to manage powdery mildew in peas?",
+        "answer": "For powdery mildew in peas, spray Sulphur 80 WP @ 3g/litre or Hexaconazole 5 EC @ 1ml/litre. Start spraying at first appearance. Repeat at 15 day intervals. Use resistant varieties. Avoid late sowing. Maintain proper spacing for ventilation. Remove crop debris.",
+        "category": "disease_control",
+        "crop": "Peas"
+    },
+    {
+        "id": 21,
+        "question": "What is the water requirement for wheat crop?",
+        "answer": "Wheat requires 5-6 irrigations: First at 20-25 DAS (crown root initiation), second at 40-45 DAS (tillering), third at 60-65 DAS (jointing), fourth at 80-85 DAS (flowering), fifth at 100-105 DAS (milking), sixth at 115-120 DAS (dough). If water is limited, prioritize crown root and flowering stages.",
+        "category": "crop_management",
+        "crop": "Wheat"
+    },
+    {
+        "id": 22,
+        "question": "How to control bollworm in cotton using bio-pesticides?",
+        "answer": "For bollworm bio-control: release Trichogramma wasps @ 1.5 lakh/acre at flower initiation, repeat 6 times at weekly intervals. Spray Bt (Bacillus thuringiensis) @ 1g/litre. Use NPV (Nuclear Polyhedrosis Virus) @ 250 LE/acre. Neem seed kernel extract 5% is also effective.",
+        "category": "pest_control",
+        "crop": "Cotton"
+    },
+    {
+        "id": 23,
+        "question": "What is soil testing and how to get it done?",
+        "answer": "Soil testing analyzes NPK, pH, organic carbon, and micronutrients. Collect samples from 6-8 spots at 15cm depth, mix thoroughly, take 500g to nearest Krishi Vigyan Kendra or Soil Testing Lab. Cost is free or nominal (Rs 50-100). Results come in 7-15 days with fertilizer recommendations.",
+        "category": "crop_management",
+        "crop": "General"
+    },
+    {
+        "id": 24,
+        "question": "How to manage yellowing of leaves in paddy?",
+        "answer": "Yellowing in paddy may be due to: nitrogen deficiency (apply Urea 20 kg/acre), iron deficiency (spray FeSO4 0.5%), zinc deficiency (apply ZnSO4 10 kg/acre), or bacterial leaf blight (spray Streptomycin 0.01% + Copper oxy 0.25%). Check water management — both excess and deficit cause yellowing.",
+        "category": "disease_control",
+        "crop": "Paddy"
+    },
+    {
+        "id": 25,
+        "question": "What are the benefits of drip irrigation?",
+        "answer": "Drip irrigation saves 40-60% water, increases yield by 20-30%, reduces weed growth, saves labor. Government subsidy of 55-90% available under PMKSY. Suitable for vegetables, fruit orchards, sugarcane. Apply fertilizers through drip (fertigation) for 30% saving. Requires filtration and maintenance.",
+        "category": "crop_management",
+        "crop": "General"
+    },
+    {
+        "id": 26,
+        "question": "How to control fruit fly in mango?",
+        "answer": "For fruit fly in mango, use methyl eugenol traps @ 10/acre from March. Spray Deltamethrin 2.8 EC @ 1ml/litre or Malathion 50 EC @ 2ml/litre. Collect and destroy fallen fruits daily. Bait spray: mix jaggery 10g + Malathion 1ml/litre, spray on trunk. Hot water treatment (48°C for 60 min) for harvested fruits.",
+        "category": "pest_control",
+        "crop": "Mango"
+    },
+    {
+        "id": 27,
+        "question": "What is the recommended NPK ratio for paddy?",
+        "answer": "For paddy, apply NPK @ 120:60:60 kg/ha for irrigated conditions. Apply full P and K at transplanting, N in 3 splits: 50% basal, 25% at tillering (25 DAT), 25% at panicle initiation (45 DAT). For hybrid rice, increase N to 150 kg/ha. Apply ZnSO4 @ 25 kg/ha for zinc-deficient soils.",
+        "category": "fertilizer",
+        "crop": "Paddy"
+    },
+    {
+        "id": 28,
+        "question": "How to prepare organic pesticide at home?",
+        "answer": "Jeevamrutha preparation: Mix 10 kg cow dung + 10 litre cow urine + 2 kg jaggery + 2 kg pulse flour + handful of soil from farm in 200 litres water. Ferment for 7 days. Use 10 litres/acre as soil drench. Panchagavya: Mix cow dung, urine, milk, curd, ghee in specific ratio; spray 3% solution.",
+        "category": "pest_control",
+        "crop": "General"
+    },
+    {
+        "id": 29,
+        "question": "What is the right time to harvest wheat?",
+        "answer": "Harvest wheat when grains are hard and golden yellow, moisture content below 14%. Ear heads turn down, straw becomes yellow-brown. Usually 120-150 days after sowing depending on variety. Early harvesting gives immature grains. Late harvesting causes shattering losses. Use combine harvester for efficiency.",
+        "category": "crop_management",
+        "crop": "Wheat"
+    },
+    {
+        "id": 30,
+        "question": "How to control leaf curl virus in chilli?",
+        "answer": "For leaf curl virus in chilli, control the vector (whitefly/thrips): spray Imidacloprid 17.8 SL @ 0.3ml/litre or Fipronil 5 SC @ 2ml/litre. Remove and destroy infected plants. Raise nursery under nylon net (40 mesh). Spray neem oil 0.5% at 15-day intervals. Use resistant varieties.",
+        "category": "disease_control",
+        "crop": "Chilli"
+    },
+    {
+        "id": 31,
+        "question": "What is the best variety of rice for Punjab?",
+        "answer": "Best rice varieties for Punjab: PR 126 (short duration, 123 days), Pusa Basmati 1509 (non-lodging, premium quality), PR 121, PR 122. For direct seeding: PR 126, PR 128. Hybrid varieties: Arize 6444 Gold. Avoid BPT 5204 in Punjab due to long duration and blast susceptibility.",
+        "category": "crop_management",
+        "crop": "Rice"
+    },
+    {
+        "id": 32,
+        "question": "How to increase milk production in dairy cattle?",
+        "answer": "For increased milk production: provide balanced ration with 40% roughage and 60% concentrate. Feed compound cattle feed 1 kg per 2.5 litres milk. Green fodder (Berseem/Lucerne) 25-30 kg/day. Clean fresh water ad libitum. Mineral mixture 50g/day. Deworm every 3 months. Follow proper milking schedule.",
+        "category": "livestock",
+        "crop": "General"
+    },
+    {
+        "id": 33,
+        "question": "What is the subsidy available for polyhouse cultivation?",
+        "answer": "Under National Horticulture Mission, subsidy for polyhouse: 50% of cost for naturally ventilated polyhouse (max Rs 46.25 lakh/4000 sqm), 50% for fan and pad polyhouse (max Rs 56 lakh/4000 sqm). Apply through district horticulture office. Suitable crops: capsicum, cucumber, tomato, flowers.",
+        "category": "government_scheme",
+        "crop": "General"
+    },
+    {
+        "id": 34,
+        "question": "How to manage waterlogging in crops?",
+        "answer": "For waterlogging management: drain excess water immediately using channels. Apply Potassium Nitrate 1% foliar spray for stress recovery. After drainage, apply Urea 20 kg/acre. For standing crops, make drainage channels at 3m intervals. Choose waterlogging-tolerant varieties. Raised bed cultivation prevents recurrence.",
+        "category": "crop_management",
+        "crop": "General"
+    },
+    {
+        "id": 35,
+        "question": "What is integrated pest management (IPM)?",
+        "answer": "IPM combines multiple pest control methods: 1) Cultural (crop rotation, resistant varieties) 2) Mechanical (traps, hand picking) 3) Biological (Trichogramma, predators) 4) Chemical (as last resort, using need-based, selective pesticides). IPM reduces pesticide use by 50-70% while maintaining yields. Economic threshold level (ETL) guides spray decisions.",
+        "category": "pest_control",
+        "crop": "General"
+    },
+    {
+        "id": 36,
+        "question": "How to control diamondback moth in cabbage?",
+        "answer": "For diamondback moth in cabbage: spray Spinosad 45 SC @ 0.3ml/litre or Emamectin Benzoate 5 SG @ 0.4g/litre. Release Cotesia plutellae parasitoid. Use Bt spray @ 1g/litre. Install pheromone traps for monitoring. Intercrop with tomato or onion. Avoid monocropping of crucifers.",
+        "category": "pest_control",
+        "crop": "Cabbage"
+    },
+    {
+        "id": 37,
+        "question": "What is the ideal pH for growing rice?",
+        "answer": "Rice grows best in pH 5.5-6.5 (slightly acidic to neutral). For acidic soils (pH<5.5), apply lime @ 2-4 tonnes/ha one month before puddling. For alkaline soils (pH>8), apply gypsum @ 2.5 tonnes/ha. Regular organic matter addition helps buffer soil pH. Get soil tested before corrective measures.",
+        "category": "crop_management",
+        "crop": "Rice"
+    },
+    {
+        "id": 38,
+        "question": "How to apply for Kisan Credit Card?",
+        "answer": "Apply for KCC at any nationalized bank, cooperative bank, or regional rural bank. Documents needed: land records, Aadhaar, passport photo, recent photograph. Credit limit: Rs 1.6 lakh at 4% interest (with subsidy). Renovation: apply 15 days before expiry. Online application available through banks' websites.",
+        "category": "government_scheme",
+        "crop": "General"
+    },
+    {
+        "id": 39,
+        "question": "What is the best method for weed control in wheat?",
+        "answer": "For weed control in wheat: pre-emergence spray Pendimethalin 30 EC @ 3.3ml/litre within 2 DAS. Post-emergence for grassy weeds: Clodinafop 15 WP @ 400g/ha at 30-35 DAS. For broadleaf weeds: 2,4-D @ 500g/ha or Metsulfuron 20 WP @ 20g/ha at 25-30 DAS. Avoid late spraying after jointing.",
+        "category": "crop_management",
+        "crop": "Wheat"
+    },
+    {
+        "id": 40,
+        "question": "How to manage fusarium wilt in banana?",
+        "answer": "For fusarium wilt (Panama disease) in banana: use tissue culture plants from certified labs. Treat suckers in Carbendazim 0.2% for 30 minutes. Apply Trichoderma viride @ 50g/plant in pit during planting. Avoid planting in infected fields for 3-5 years. Use resistant variety Grand Naine.",
+        "category": "disease_control",
+        "crop": "Banana"
+    },
+    {
+        "id": 41,
+        "question": "What is vermicompost and how to prepare it?",
+        "answer": "Vermicompost is composting using earthworms (Eisenia fetida). Method: prepare 3ft x 3ft x 2ft bed, layer cow dung 6 inches, add semi-decomposed agro waste, release 1000 worms. Maintain 60% moisture, cover with gunny bags. Ready in 45-60 days. Produces 6-8 quintals from 1 tonne waste. Nutrient-rich, improves soil structure.",
+        "category": "fertilizer",
+        "crop": "General"
+    },
+    {
+        "id": 42,
+        "question": "How to control thrips in onion?",
+        "answer": "For thrips in onion: spray Fipronil 5 SC @ 2ml/litre or Carbosulfan 25 EC @ 2ml/litre. Spray on central leaves. Use blue sticky traps for monitoring. Intercrop with garlic. Apply carbofuran 3G in furrows. Irrigate field to maintain humidity. Avoid excessive nitrogen. Repeat spray at 10-day intervals.",
+        "category": "pest_control",
+        "crop": "Onion"
+    },
+    {
+        "id": 43,
+        "question": "What is the importance of crop rotation?",
+        "answer": "Crop rotation benefits: breaks pest/disease cycle, improves soil fertility (legumes fix nitrogen), prevents nutrient depletion, controls weeds. Recommended rotations: Rice-Wheat-Moong, Cotton-Wheat-Groundnut, Maize-Potato-Onion. Avoid same family crops consecutively. Include one legume in rotation. Increases yield by 10-15%.",
+        "category": "crop_management",
+        "crop": "General"
+    },
+    {
+        "id": 44,
+        "question": "How to manage downy mildew in grapes?",
+        "answer": "For downy mildew in grapes: spray Mancozeb 75 WP @ 2.5g/litre preventively. For curative: Metalaxyl + Mancozeb (Ridomil Gold) @ 2.5g/litre. Fosetyl-Al @ 3g/litre for systemic protection. Prune for good air circulation. Remove infected leaves. Spray from bud break to veraison at 10-15 day intervals.",
+        "category": "disease_control",
+        "crop": "Grapes"
+    },
+    {
+        "id": 45,
+        "question": "What micronutrients are important for crops?",
+        "answer": "Essential micronutrients: Zinc (ZnSO4 25 kg/ha for deficiency), Iron (FeSO4 0.5% spray), Boron (Borax 10 kg/ha for oilseeds), Manganese (MnSO4 0.5% spray), Copper, Molybdenum. Deficiency symptoms: Zinc-white bands in maize, Iron-interveinal chlorosis. Soil test-based application recommended. Multi-micronutrient mixture @ 5 kg/acre.",
+        "category": "fertilizer",
+        "crop": "General"
+    },
+    {
+        "id": 46,
+        "question": "How to store wheat grains safely?",
+        "answer": "For safe wheat storage: dry grains to 10-12% moisture. Clean storage bins/bags. Fumigate with Aluminium Phosphide 2 tablets/tonne. Use hermetic storage bags (PICS bags). Store on raised platform, away from walls. Check monthly for insects. Neem leaves between layers repel pests. Ideal temperature below 25°C.",
+        "category": "crop_management",
+        "crop": "Wheat"
+    },
+    {
+        "id": 47,
+        "question": "What is the treatment for foot and mouth disease in cattle?",
+        "answer": "FMD treatment: isolate infected animals. Apply Borax + Glycerine on mouth ulcers. Potassium permanganate wash for foot lesions. Provide soft feed. FMD vaccination every 6 months is most important preventive measure. Report to veterinary officer. Government provides free vaccination under FMD Control Programme.",
+        "category": "livestock",
+        "crop": "General"
+    },
+    {
+        "id": 48,
+        "question": "How to grow mushrooms at home?",
+        "answer": "For oyster mushroom at home: pasteurize wheat/paddy straw in hot water (80°C for 2 hours). Cool to room temperature. Mix spawn 3% by weight. Fill in polybags, make holes. Keep in dark room at 25-30°C for 15-20 days (spawn run). Then move to light room with 80-85% humidity. First harvest in 5-7 days.",
+        "category": "crop_management",
+        "crop": "Mushroom"
+    },
+    {
+        "id": 49,
+        "question": "What is the best fertilizer for rice at transplanting?",
+        "answer": "At rice transplanting: apply DAP 50 kg/acre (provides N and P) or SSP 100 kg/acre as basal. Add MOP 25 kg/acre for potash. ZnSO4 10 kg/acre in deficient soils. Apply in puddled field before transplanting. Alternatively, use 12:32:16 NPK complex 50 kg/acre. Avoid surface application of urea at transplanting.",
+        "category": "fertilizer",
+        "crop": "Rice"
+    },
+    {
+        "id": 50,
+        "question": "How to control snails and slugs in vegetable garden?",
+        "answer": "For snails/slugs: use metaldehyde bait 5% @ 10 kg/ha. Spread crushed eggshells or ash around plants. Beer traps: bury container with beer at soil level. Hand pick during evening/early morning. Remove hiding places (debris, stones). Copper tape around raised beds. Salt kills slugs but damages soil; use sparingly.",
+        "category": "pest_control",
+        "crop": "General"
+    },
+    {
+        "id": 51,
+        "question": "How to improve soil fertility naturally?",
+        "answer": "Natural fertility improvement: apply FYM 10-15 tonnes/acre, grow green manure crops (Dhaincha, Sunhemp) and incorporate at 45 days. Add crop residue to soil instead of burning. Apply bio-fertilizers (Rhizobium, Azotobacter, PSB). Reduce tillage to preserve soil structure. Mulching conserves moisture and adds organic matter.",
+        "category": "fertilizer",
+        "crop": "General"
+    },
+    {
+        "id": 52,
+        "question": "What is the recommended spacing for sugarcane planting?",
+        "answer": "Sugarcane spacing: conventional method 75cm row spacing with 2-3 bud setts placed end to end. For paired row method: 30cm x 120cm (better yield). Trench method: 120cm spacing, 30cm deep trench. Ring pit method gives highest yield. Seed rate: 35,000-40,000 two-bud setts/acre. Plant in February-March for spring crop.",
+        "category": "crop_management",
+        "crop": "Sugarcane"
+    },
+    {
+        "id": 53,
+        "question": "How to identify nitrogen deficiency in crops?",
+        "answer": "Nitrogen deficiency symptoms: older leaves turn yellow first (starts from leaf tips), stunted growth, thin stems, reduced tillering, light green overall color. In maize: V-shaped yellowing from tip. In rice: entire plant pale yellow-green. Remedy: apply Urea 20-25 kg/acre immediately. Foliar spray of 2% Urea for quick correction.",
+        "category": "fertilizer",
+        "crop": "General"
+    },
+    {
+        "id": 54,
+        "question": "What is the process of seed treatment before sowing?",
+        "answer": "Seed treatment steps: 1) Grade seeds by size (use salt water for paddy). 2) Fungicide treatment: Carbendazim + Thiram @ 2g+1g per kg seed. 3) Insecticide: Imidacloprid 600 FS for sucking pest control. 4) Bio-agent: Trichoderma viride 4g/kg. 5) Rhizobium for legumes. Treat in sequence, dry in shade between. Never use treated seed for food.",
+        "category": "crop_management",
+        "crop": "General"
+    },
+    {
+        "id": 55,
+        "question": "How to manage drought stress in standing crops?",
+        "answer": "For drought stress: apply Potassium Nitrate 1% foliar spray. Mulch with crop residue to reduce evaporation. Spray Kaolin 6% to reduce transpiration. Antitranspirant spray helps. Give lifesaving irrigation if available. Harvest moisture-sensitive stages first. Insurance claim under PMFBY if applicable. Use drought-tolerant varieties in future.",
+        "category": "crop_management",
+        "crop": "General"
+    },
+    {
+        "id": 56,
+        "question": "What are the common diseases in potato?",
+        "answer": "Common potato diseases: 1) Late Blight (fungal) - dark water-soaked lesions, spray Mancozeb/Metalaxyl. 2) Early Blight - concentric rings on leaves, spray Chlorothalonil. 3) Black Scurf - black masses on tubers, treat tubers with Boric acid 3%. 4) Viral diseases (mosaic, leaf roll) - use certified seed, control aphids. 5) Bacterial wilt - use resistant varieties.",
+        "category": "disease_control",
+        "crop": "Potato"
+    },
+    {
+        "id": 57,
+        "question": "How to set up a kitchen garden?",
+        "answer": "Kitchen garden setup: select sunny spot 2x3m minimum. Prepare raised beds 1m wide. Mix FYM 5 kg/sqm. Grow seasonally: Summer (okra, cucumber, gourd), Winter (spinach, fenugreek, peas, carrot), Year-round (curry leaf, coriander). Use vertical growing for creepers. Water daily morning. Apply neem oil for pests. Seeds from government stores ensure quality.",
+        "category": "crop_management",
+        "crop": "General"
+    },
+    {
+        "id": 58,
+        "question": "What is the treatment for rust disease in wheat?",
+        "answer": "For wheat rust (yellow/brown/black): spray Propiconazole 25 EC @ 1ml/litre or Tebuconazole 25.9 EC @ 1ml/litre at first appearance. Repeat after 15 days if needed. Grow resistant varieties HD 3086, DBW 187. Avoid late sowing. Monitor fields from February onwards. Report outbreak to agriculture department immediately.",
+        "category": "disease_control",
+        "crop": "Wheat"
+    },
+    {
+        "id": 59,
+        "question": "How to grow turmeric for profit?",
+        "answer": "Profitable turmeric cultivation: prepare land in April-May, plant mother rhizomes in June. Spacing 30x20cm in ridges. Apply FYM 15 tonnes + NPK 60:30:60 kg/acre. Mulch with dry leaves. Irrigate every 7-10 days. Harvest in January (8-9 months). Expected yield: 80-100 quintals/acre fresh. Curing: boil 45min, sun-dry 10-15 days. Good market rate Rs 7000-12000/quintal.",
+        "category": "crop_management",
+        "crop": "Turmeric"
+    },
+    {
+        "id": 60,
+        "question": "What is the ideal temperature for wheat germination?",
+        "answer": "Wheat germinates best at 20-25°C soil temperature. Optimal sowing temperature: 15-20°C. In north India, sow by 1-15 November for best results. Late sowing (after Dec) reduces yield by 25 kg/day. Below 5°C germination is very slow. Vernalization requirement of 4-14 days at 0-5°C for flowering initiation.",
+        "category": "crop_management",
+        "crop": "Wheat"
+    }
+]
