@@ -90,7 +90,7 @@ TRANSLATIONS = {
         "guide_text": "1. Type or speak your farming question\n2. Enable **Online AI** for LLM answer\n3. Click **Get Expert Advice**\n4. View matched past queries at bottom",
         "hero_title": "🌾 Kisan Call Centre Query Assistant",
         "hero_sub": "AI-Powered Agricultural Helpdesk for Indian Farmers",
-        "hero_badge": "🏆 Hackathon Edition &nbsp;|&nbsp; FAISS + IBM Watsonx Granite",
+        "hero_badge": "FAISS + IBM Watsonx Granite",
         "input_label": "🌱 Enter Your Farming Question",
         "input_placeholder": "e.g. My paddy leaves are turning yellow. What fertilizer should I apply?",
         "toggle_label": "🤖 Enable Online AI Enhancement",
@@ -182,22 +182,41 @@ TRANSLATIONS = {
 
 def transcribe_audio(audio_bytes, lang_code="en-IN"):
     """Convert audio bytes to text using Google Speech Recognition"""
+    import io
+    temp_wav_path = os.path.join(BASE_DIR, "temp_audio.wav")
     try:
         r = sr.Recognizer()
-        with open("temp_audio.wav", "wb") as f:
-            f.write(audio_bytes)
-        with sr.AudioFile("temp_audio.wav") as source:
-            audio_data = r.record(source)
+
+        # Try direct WAV read first via BytesIO
+        try:
+            audio_io = io.BytesIO(audio_bytes)
+            with sr.AudioFile(audio_io) as source:
+                audio_data = r.record(source)
+        except Exception as direct_err:
+            logger.warning(f"Direct WAV read failed ({direct_err}), trying pydub conversion...")
+            # Fallback: use pydub to convert from whatever format the browser sent
+            from pydub import AudioSegment
+            audio_io = io.BytesIO(audio_bytes)
+            audio_segment = AudioSegment.from_file(audio_io)
+            audio_segment = audio_segment.set_frame_rate(16000).set_channels(1).set_sample_width(2)
+            wav_io = io.BytesIO()
+            audio_segment.export(wav_io, format="wav")
+            wav_io.seek(0)
+            with sr.AudioFile(wav_io) as source:
+                audio_data = r.record(source)
+
         text = r.recognize_google(audio_data, language=lang_code)
+        logger.info(f"Transcribed: {text}")
         return text
     except sr.UnknownValueError:
+        logger.warning("Speech recognition could not understand audio")
         return ""
     except Exception as e:
         logger.error(f"Speech recognition error: {e}")
         return ""
     finally:
-        if os.path.exists("temp_audio.wav"):
-            os.remove("temp_audio.wav")
+        if os.path.exists(temp_wav_path):
+            os.remove(temp_wav_path)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -688,43 +707,69 @@ def main():
     # ── Hero ──────────────────────────────────────────────────────────────
     render_hero(t)
 
-    # ── Query input & Mic ─────────────────────────────────────────────────
-    col_input, col_control = st.columns([3, 1])
+    # ── Inject pending voice text BEFORE widget renders ────────────────────
+    if "_pending_voice_text" in st.session_state:
+        st.session_state.query_input = st.session_state._pending_voice_text
+        del st.session_state._pending_voice_text
 
-    with col_input:
-        default_query = st.session_state.get("voice_query", "")
-        user_query = st.text_area(
-            t["input_label"],
-            value=default_query,
-            placeholder=t["input_placeholder"],
-            height=130,
-            key="query_input",
-            label_visibility="visible",
+    # ── Query input (full width) ─────────────────────────────────────────
+    user_query = st.text_area(
+        t["input_label"],
+        placeholder=t["input_placeholder"],
+        height=130,
+        key="query_input",
+        label_visibility="visible",
+    )
+
+    # ── Mic + Controls row below text area ────────────────────────────────
+    # Custom CSS for a beautiful mic button
+    st.markdown("""
+    <style>
+    .mic-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 4px 0 8px 0;
+    }
+    /* Style the mic_recorder iframe wrapper */
+    [data-testid="stVerticalBlock"] > div:has(iframe[title="streamlit_mic_recorder.audio_recorder"]) {
+        display: inline-flex !important;
+    }
+    /* Make the mic recorder buttons look sleek */
+    .stCustomComponentV1 iframe {
+        border-radius: 12px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+    col_mic, col_toggle, col_btn = st.columns([1, 2, 2])
+
+    with col_mic:
+        audio = mic_recorder(
+            start_prompt="🎤 Speak",
+            stop_prompt="⏹️ Stop",
+            format="wav",
+            use_container_width=True,
+            key='recorder'
         )
-
-    with col_control:
-        st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)  # spacer
-        
-        # Audio Recorder
-        st.write(t["mic_label"])
-        audio = mic_recorder(start_prompt="⏺️ Record", stop_prompt="⏹️ Stop", format="wav", key='recorder')
-        print(f"DEBUG: Mic audio captured: {'Yes' if audio else 'No'}")
         if audio and 'bytes' in audio:
-            print(f"DEBUG: Entering spinner. Bytes length: {len(audio['bytes'])}")
-            with st.spinner("Processing speech..."):
+            with st.spinner("🎙️ Converting speech to text..."):
                 transcribed_text = transcribe_audio(audio['bytes'], t["sr_lang"])
-                print(f"DEBUG: Transcribed text: '{transcribed_text}'")
-                if transcribed_text and transcribed_text != st.session_state.get("voice_query"):
-                    st.session_state.voice_query = transcribed_text
-                    print("DEBUG: Setting session state and rerunning")
+                logger.info(f"Transcribed text: '{transcribed_text}'")
+                if transcribed_text and transcribed_text != st.session_state.get("_last_voice_text"):
+                    st.session_state._last_voice_text = transcribed_text
+                    st.session_state._pending_voice_text = transcribed_text
                     st.rerun()
 
+    with col_toggle:
         enable_online = st.toggle(
             t["toggle_label"],
             value=False,
             help=t["toggle_help"],
             key="online_toggle",
         )
+
+    with col_btn:
         get_answer_btn = st.button(t["btn_label"], use_container_width=True)
 
     # ── Warning if online enabled but creds missing ───────────────────────
