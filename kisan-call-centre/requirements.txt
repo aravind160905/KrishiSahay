@@ -1,0 +1,9 @@
+streamlit
+sentence-transformers
+faiss-cpu
+requests
+python-dotenv
+numpy
+streamlit-mic-recorder
+SpeechRecognition
+deep-translator
