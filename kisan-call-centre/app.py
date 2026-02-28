@@ -218,6 +218,34 @@ def transcribe_audio(audio_bytes, lang_code="en-IN"):
         if os.path.exists(temp_wav_path):
             os.remove(temp_wav_path)
 
+def generate_audio(text, lang_code="en-IN"):
+    """Convert text to audio bytes using pyttsx3"""
+    import os
+    import pyttsx3
+    import re
+    import time
+    
+    try:
+        # Clean basic markdown before speech
+        clean_text = re.sub(r'<[^>]+>', '', text)
+        clean_text = re.sub(r'[*_#]', '', clean_text)
+        
+        engine = pyttsx3.init()
+        temp_file = f"temp_tts_{int(time.time())}.wav"
+        engine.save_to_file(clean_text, temp_file)
+        engine.runAndWait()
+        
+        with open(temp_file, "rb") as f:
+            audio_data = f.read()
+            
+        if os.path.exists(temp_file):
+            os.remove(temp_file)
+            
+        return audio_data
+    except Exception as e:
+        import logging
+        logging.getLogger(__name__).error(f"TTS error: {e}")
+        return None
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Custom CSS
@@ -677,10 +705,6 @@ def render_similar_queries(top_results: list[dict], t: dict):
             <div class="similar-card">
                 <div class="similar-q">#{i} &nbsp; {q}</div>
                 <div class="similar-a">{a}</div>
-                <div class="similar-meta">
-                    {'📦 ' + meta_str if meta_str else ''}
-                    &nbsp;&nbsp; 🎯 {t['similarity']}: {float(score)*100:.1f}%
-                </div>
             </div>
             """,
             unsafe_allow_html=True,
@@ -821,10 +845,18 @@ def main():
             
             # Display all 5 answers
             if offline_result.get("formatted_answers"):
+                first_answer = offline_result["formatted_answers"][0]
+                audio_bytes = generate_audio(first_answer, t["sr_lang"])
+                if audio_bytes:
+                    st.audio(audio_bytes, format="audio/mp3")
+                
                 for answer in offline_result["formatted_answers"]:
                     st.markdown(answer)
                     st.markdown("---")  # Add separator between answers
             else:
+                audio_bytes = generate_audio(offline_result["formatted_answer"], t["sr_lang"])
+                if audio_bytes:
+                    st.audio(audio_bytes, format="audio/mp3")
                 st.markdown(offline_result["formatted_answer"])
             
             st.markdown("</div>", unsafe_allow_html=True)
@@ -856,6 +888,10 @@ def main():
                         unsafe_allow_html=True,
                     )
                     # Display answer preserving Unicode / Hindi text
+                    audio_bytes = generate_audio(llm_answer, t["sr_lang"])
+                    if audio_bytes:
+                        st.audio(audio_bytes, format="audio/mp3")
+                                
                     st.markdown(llm_answer)
                     st.markdown("</div>", unsafe_allow_html=True)
             else:

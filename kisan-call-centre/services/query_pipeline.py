@@ -93,7 +93,7 @@ def get_offline_answer(query: str, index, metadata: list[dict], model, top_k: in
             context_parts = [p for p in [c, s] if p]
             context_str = f" ({', '.join(context_parts)})" if context_parts else ""
             
-            answer_text = f"**Answer {i} (Similarity: {score*100:.1f}%):**\n**Matched Question:** {q}{context_str}\n\n**Answer:**\n{a}"
+            answer_text = f"**Matched Question:** {q}{context_str}\n\n**Answer:**\n{a}"
             formatted_answers.append(answer_text)
         
         # Keep the first answer as the main formatted answer for backward compatibility
